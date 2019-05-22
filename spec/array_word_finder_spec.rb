@@ -18,7 +18,7 @@ describe ArrayWordFinder do
     context 'word is not a string' do
       let(:word) { true }
       it 'should raise an ArgumentError exception' do
-        expect { subject.to raise_error(ArgumentError) }
+        expect { subject }.to raise_error(ArgumentError)
       end
     end
   end
